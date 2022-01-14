@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: Rafael Macalaba
+description: "Python · Data Science · Finance · Data Engineering · DevOps"
 github_username: rafmacalaba
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "personal-blog"
@@ -34,13 +34,14 @@ url: "https://rafmacalaba.github.io" # the base hostname & protocol for your sit
 #
 # 3. You must replace the parameter `baseurl` in _action_files/settings.ini with the same value as you set here but WITHOUT QUOTES.
 #
-baseurl: "/personal-blog" # the subpath of your site, e.g. "/blog".
+baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: fastdotai
-    github: fastai
+    linkedin: rafaelmacalaba
+    github: rafmacalaba
+    instagram: rafmacalaba
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -49,10 +50,7 @@ use_math:
 show_description: true
 
 # Set this to true to display image previews on home page, if they exist
-show_image: false
-
-# Set this to true to turn on annotations with hypothes.is (https://web.hypothes.is/)
-annotations: false
+show_image: true
 
 # Set this to true to display tags on each post
 show_tags: true
@@ -70,17 +68,16 @@ include:
   - _pages
 
 # This specifies what badges are turned on by default for notebook posts.
-default_badges:
-  github: true
-  binder: true
-  colab: true
-  deepnote: true
+# default_badges:
+#   github: true
+#   binder: true
+#   colab: true
 
 # Escape HTML in post descriptions
 html_escape:
   description: false
 
-# Everything below here should be left alone. Modifications may break fastpages
+# # Everything below here should be left alone. Modifications may break fastpages
 future: true
 theme: minima
 plugins:
@@ -116,11 +113,3 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-
-# to limit size of xml as it can grow quite large.
-feed:
-  posts_limit: 5 #default posts_limit: 10
-  excerpt_only: true
-  
-exclude:
-  - settings.ini
